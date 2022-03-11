@@ -7,6 +7,7 @@ function App() {
     <div className="App">
       <div className="header__logo">
         <StorefrontIcon className="header__logoImage" fontSize="large"/>
+        <h2 className="header__logoTitle">eShop</h2>
       </div>
       <div className="header__search"></div>
       <div className="header__nav">
@@ -19,7 +20,7 @@ function App() {
           <span className="nav__itemLineTwo">Shop</span>
         </div>
         <div className="nav__item">
-          <ShoppingBasketIcon fontSize="large"/>
+          <ShoppingBasketIcon/>
           <span className="nav__itemLineTwo">0</span>
         </div>
       </div>
