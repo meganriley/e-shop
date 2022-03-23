@@ -1,5 +1,4 @@
 /* eslint-disable no-unused-vars */
-/* eslint-disable jsx-a11y/alt-text */
 import React from 'react';
 import './Product.css';
 import { useStateValue } from "./StateProvider"
@@ -31,12 +30,12 @@ function Product ({id, title, image, price, rating}) {
                     {Array(rating)
                     .fill()
                     .map((_, i) => (
-                        <p>⭐</p>
+                        <p key={i}>⭐</p>
                     ))}
                 </div>
             </div>
 
-            <img src={image} />
+            <img src={image} alt=""/>
             
             <button onClick={addToBasket}>Add to Basket</button>
         </div>
